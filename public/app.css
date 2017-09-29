@@ -2493,13 +2493,14 @@ nav ul a span.badge {
   float: none;
   margin-left: 4px;
   line-height: 22px;
-  height: 22px; }
+  height: 22px;
+  -webkit-font-smoothing: auto; }
 
 .collection-item span.badge {
   margin-top: calc(0.75rem - 11px); }
 
 .collapsible span.badge {
-  margin-top: calc(1.5rem - 11px); }
+  margin-left: auto; }
 
 .side-nav span.badge {
   margin-top: calc(24px - 11px); }
@@ -5063,7 +5064,7 @@ select {
   border-radius: 2px;
   height: 3rem; }
 
-.input-field select {
+.input-field > select {
   display: block;
   position: absolute;
   width: 0;
@@ -6030,7 +6031,7 @@ input[type=range]:focus::-ms-fill-upper {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s, transform .3s, visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -6065,7 +6066,7 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -6934,6 +6935,10 @@ body {
   text-align: center; }
 
 .signup-box .Platzigram {
+  font-family: 'Oleo Script';
+  font-size: 42px; }
+
+.Platzigram {
   font-family: 'Oleo Script';
   font-size: 42px; }
 

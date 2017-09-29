@@ -1,34 +1,27 @@
 var yo = require('yo-yo');
+var template = yo`
+<nav class="header">
+<div class="nav-wrapper">
+  <div class="container">
+   <div class="row">
 
+   <div class="col s12 m6 offset-m1">
+   <a href="/" class="brand-logo platzigram">Platzigram</a>
+   </div>
 
+   <div class="col s2 m6 push-m10">
+   <a href="#" class="btn btn-large btn-flat dropdown-button " data-activates="drop-user">
+   <i class="fa fa-user" aria-hidden="true"></i>
+   </a>
+   </div>
 
-var template = yo `<div class="col s12 m7">
-                            <div class="row">
-                                <div class="signup-box">
-                                    <h1 class="Platzigram">Platzigram</h1>
-                                    <form class="signup-form">
-                                        <h2>Registrate para ver todo el contenido</h2>
-                                        <div class="section">
-                                            <a class="btn btn-fb hidden-on-small-only">Iniciar sesión con facebook</a>
-                                            <a class="btn btn-fb hide-on-med-and-up">Iniciar sesión con facebook</a>
-                                        </div>
-                                        <div class="divider"></div>
-                                        <div class="section">
-                                            <input type="email" name="email" placeholder="Correo electrónico">
-                                            <input type="text" name="name" placeholder="Nombre completo">
-                                            <input type="text" name="username" placeholder="Nombre de usuario">
-                                            <input type="password" name="password" placeholder="Contraseña">
-                                            <button class="btn waves-effect waves-light btn-signup" type="submit" >Registrate</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="signup-box">
-                                    ¿Tienes una cuenta ? <a href="/signin">Entrar</a>
-                                </div>
-
-                            </div>
-                        </div>`;
+   <ul id="drop-user" class="dropdown-content">
+   <li> Salir</li>
+   </ul>
+   
+   </div>
+  </div>
+  </div>
+</nav>`;
 
 module.exports = template;
