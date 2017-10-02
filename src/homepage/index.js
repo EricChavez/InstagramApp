@@ -5,5 +5,5 @@ var title = require('title');
 page('/', function (ctx, next) {
     title('Platzigram-Home');
     var main = document.getElementById('main-container');
-   // empty(main).appendChild(template);
+    empty(main).appendChild(template);
 });
